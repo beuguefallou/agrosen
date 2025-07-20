@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .chat-container {
+            width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chat-log {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #f9f9f9;
+        }
+        .chat-log div {
+            margin-bottom: 10px;
+        }
+        .user {
+            text-align: right;
+            color: #333;
+        }
+        .bot {
+            text-align: left;
+            color: #007bff;
+        }
+        .chat-input {
+            width: calc(100% - 50px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .chat-send {
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-log" id="chat-log"></div>
+        <input type="text" id="chat-input" class="chat-input" placeholder="Escribe un mensaje...">
+        <button id="chat-send" class="chat-send">Enviar</button>
+    </div>
+    <script>
+        document.getElementById('chat-send').addEventListener('click', function() {
+            var input = document.getElementById('chat-input').value;
+            var chatLog = document.getElementById('chat-log');
+            var userMessage = document.createElement('div');
+            userMessage.className = 'user';
+            userMessage.innerText = input;
+            chatLog.appendChild(userMessage);
+
+            fetch('/chatbot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({message: input})
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botMessage = document.createElement('div');
+                botMessage.className = 'bot';
+                botMessage.innerText = data.response;
+                chatLog.appendChild(botMessage);
+                document.getElementById('chat-input').value = '';
+            });
+        });
+    </script>
+</body>
+</html>

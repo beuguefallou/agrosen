@@ -1,0 +1,97 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Hello",
+          "Good morning",
+          "Good afternoon",
+          "Good evening"
+        ],
+        "responses": [
+          "Hello!",
+          "Hi there!",
+          "Greetings!",
+          "How can I assist you today?"
+        ]
+      },
+      {
+        "tag": "store_hours",
+        "patterns": [
+          "What are your store hours?",
+          "When are you open?",
+          "Opening hours",
+          "Closing hours",
+          "Store timings"
+        ],
+        "responses": [
+          "We are open from 9 AM to 9 PM from Monday to Saturday.",
+          "Our store hours are 9 AM to 9 PM on weekdays and Saturdays."
+        ]
+      },
+      {
+        "tag": "store_location",
+        "patterns": [
+          "Where is the store located?",
+          "Store address",
+          "How can I get to the store?",
+          "Store location"
+        ],
+        "responses": [
+          "Our store is located at 123 Main Street, Downtown.",
+          "You can find us at 123 Main Street, right in the heart of Downtown."
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "See you",
+          "Talk to you later"
+        ],
+        "responses": [
+          "Goodbye!",
+          "See you later!",
+          "Have a great day!",
+          "Take care!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "That's helpful",
+          "Thanks a lot"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Happy to help!",
+          "Anytime!",
+          "My pleasure!"
+        ]
+      },
+      {
+        "tag": "affirmation",
+        "patterns": [
+          "Yes",
+          "Sure",
+          "Absolutely",
+          "Of course",
+          "Definitely"
+        ],
+        "responses": [
+          "Great!",
+          "Awesome!",
+          "Good to hear!",
+          "Alright!"
+        ]
+      }
+    ]
+  }
+  

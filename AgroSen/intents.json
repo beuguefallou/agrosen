@@ -1,0 +1,196 @@
+{
+    "intents": [
+        {
+            "tag": "saludos",
+            "patterns": [
+                "Hola",
+                "Buenos días",
+                "Buenas tardes",
+                "Buenas noches",
+                "¿Cómo estás?",
+                "¿Qué tal?",
+                "Hey",
+                "Hola, ¿cómo estás?",
+                "Saludos",
+                "¿Qué hay?"
+            ],
+            "responses": [
+                "¡Hola! ¿En qué puedo ayudarte hoy?",
+                "Buenos días, ¿cómo puedo asistirte?",
+                "Buenas tardes, ¿en qué necesitas ayuda?",
+                "Buenas noches, ¿cómo puedo ayudarte hoy?",
+                "Estoy bien, gracias. ¿Y tú?",
+                "¡Hey! ¿Cómo estás?",
+                "Hola, estoy aquí para ayudarte con cualquier pregunta sobre tus plantas.",
+                "Saludos, ¿qué tal tu día?",
+                "¿Qué hay? Estoy aquí para ayudarte con cualquier consulta sobre agricultura."
+            ]
+        },
+        {
+            "tag": "mancha_bacteriana",
+            "patterns": [
+                "manchas bacterianas",
+                "Mi planta tiene manchas bacterianas",
+                "Hay manchas bacterianas en mi planta",
+                "Manchas bacterianas en las hojas",
+                "Plaga de manchas bacterianas"
+            ],
+            "responses": [
+                "Para tratar manchas bacterianas, utiliza un fungicida adecuado y evita el riego por aspersión.",
+                "Retira las hojas afectadas y asegúrate de que las herramientas de poda estén desinfectadas.",
+                "Asegura una buena circulación de aire y evita el exceso de humedad en las plantas."
+            ]
+        },
+        {
+            "tag": "sarampion_negro",
+            "patterns": [
+                "sarampión negro",
+                "Mi planta tiene sarampión negro",
+                "Hay sarampión negro en mi planta",
+                "Sarampión negro en las hojas",
+                "Plaga de sarampión negro"
+            ],
+            "responses": [
+                "El sarampión negro es causado por un hongo. Aplica un fungicida y asegúrate de eliminar las hojas infectadas.",
+                "Evita el riego por aspersión y mejora la circulación de aire alrededor de la planta.",
+                "Realiza una poda para eliminar las partes infectadas y prevenir la propagación."
+            ]
+        },
+        {
+            "tag": "podredumbre_negra",
+            "patterns": [
+                "podredumbre negra",
+                "Mi planta tiene podredumbre negra",
+                "Hay podredumbre negra en mi planta",
+                "Podredumbre negra en las hojas",
+                "Plaga de podredumbre negra"
+            ],
+            "responses": [
+                "La podredumbre negra puede ser tratada con fungicidas específicos. Asegúrate de eliminar las partes afectadas.",
+                "Mejora el drenaje del suelo y evita el exceso de riego para prevenir la podredumbre negra.",
+                "Mantén la planta en un lugar con buena circulación de aire y evita la humedad excesiva."
+            ]
+        },
+        {
+            "tag": "desconocido",
+            "patterns": [
+                "desconocido",
+                "No sé qué tiene mi planta",
+                "Mi planta tiene una plaga desconocida",
+                "No puedo identificar la plaga en mi planta",
+                "Plaga desconocida en mi planta"
+            ],
+            "responses": [
+                "Para plagas desconocidas, toma una muestra y consulta con un especialista en plantas.",
+                "Puedes intentar un tratamiento general con fungicidas o insecticidas hasta identificar la plaga.",
+                "Aísla la planta afectada para evitar la propagación de la plaga a otras plantas."
+            ]
+        },
+        {
+            "tag": "tizon_temprano",
+            "patterns": [
+                "Tizón temprano",
+                "Mi planta tiene tizón temprano",
+                "Hay tizón temprano en mi planta",
+                "Tizón temprano en las hojas",
+                "Plaga de tizón temprano"
+            ],
+            "responses": [
+                "El tizón temprano se puede controlar con fungicidas a base de cobre.",
+                "Retira y destruye las hojas afectadas para evitar la propagación del hongo.",
+                "Asegúrate de que la planta tenga suficiente espacio para una buena circulación de aire."
+            ]
+        },
+        {
+            "tag": "tizon_tardio",
+            "patterns": [
+                "Tizón tardío",
+                "Mi planta tiene tizón tardío",
+                "Hay tizón tardío en mi planta",
+                "Tizón tardío en las hojas",
+                "Plaga de tizón tardío"
+            ],
+            "responses": [
+                "El tizón tardío puede ser controlado con fungicidas específicos. Aplicar tan pronto como se detecten los síntomas.",
+                "Elimina las hojas y ramas afectadas y desinfecta las herramientas de poda.",
+                "Evita el riego por aspersión y mejora la ventilación para reducir la humedad."
+            ]
+        },
+        {
+            "tag": "quemadura_hoja",
+            "patterns": [
+                "quemadura de hojas",
+                "Mi planta tiene quemadura de hojas",
+                "Hay quemadura de hojas en mi planta",
+                "Quemadura de hojas en mi planta",
+                "Plaga de quemadura de hojas"
+            ],
+            "responses": [
+                "La quemadura de hojas puede ser causada por varios factores. Asegúrate de que la planta no esté expuesta a demasiada luz solar directa.",
+                "Mantén un riego adecuado y asegúrate de que el suelo drene bien.",
+                "Aplica un fertilizante equilibrado y asegúrate de que la planta reciba los nutrientes necesarios."
+            ]
+        },
+        {
+            "tag": "roya",
+            "patterns": [
+                "Roya",
+                "Mi planta tiene roya",
+                "Hay roya en mi planta",
+                "Roya en las hojas",
+                "Plaga de roya"
+            ],
+            "responses": [
+                "La roya se puede controlar con fungicidas específicos. Asegúrate de eliminar las hojas afectadas.",
+                "Mejora la circulación de aire alrededor de la planta para reducir la humedad.",
+                "Evita el riego por aspersión y mantén el suelo bien drenado."
+            ]
+        },
+        {
+            "tag": "sarna",
+            "patterns": [
+                "Sarna",
+                "Mi planta tiene sarna",
+                "Hay sarna en mi planta",
+                "Sarna en las hojas",
+                "Plaga de sarna"
+            ],
+            "responses": [
+                "La sarna puede ser controlada con fungicidas. Asegúrate de eliminar las partes afectadas.",
+                "Mantén la planta en un lugar con buena circulación de aire y evita la humedad excesiva.",
+                "Asegúrate de que el suelo tenga un buen drenaje para evitar la acumulación de humedad."
+            ]
+        },
+        {
+            "tag": "sin_plaga",
+            "patterns": [
+                "Sin plaga",
+                "Mi planta está bien",
+                "No hay plagas en mi planta",
+                "Mi planta está saludable",
+                "No veo plagas en mi planta"
+            ],
+            "responses": [
+                "¡Genial! Tu planta está en perfectas condiciones. Sigue cuidándola así.",
+                "Es excelente que no haya plagas. Mantén las buenas prácticas de cuidado.",
+                "Tu planta está saludable. Asegúrate de seguir proporcionándole los cuidados necesarios.",
+                "Sin plagas, tu planta prosperará. Sigue con las buenas prácticas."
+            ]
+        },
+        {
+            "tag": "manchas",
+            "patterns": [
+                "Manchas",
+                "Mi planta tiene manchas",
+                "Hay manchas en mi planta",
+                "Manchas en las hojas",
+                "Plaga de manchas"
+            ],
+            "responses": [
+                "Las manchas en las hojas pueden ser tratadas con fungicidas adecuados. Retira las hojas afectadas.",
+                "Evita el riego por aspersión y mejora la circulación de aire alrededor de la planta.",
+                "Asegúrate de que el suelo tenga un buen drenaje y evita el exceso de riego."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+flask
+spacy
+tensorflow==1.14.0
+tflearn==0.3.2
+jupyter
+protobuf==3.20.*
